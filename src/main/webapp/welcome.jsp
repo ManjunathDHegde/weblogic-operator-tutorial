@@ -61,9 +61,6 @@
         <h4>Remote Host: <span><%= request.getRemoteHost() %></span></h4>
                 
         </div>
-        
-        <h4>HTTP Request URL : <span><%= request.getRequestURL() %></span></h4>
-        <h4>HTTP Request Method : <span><%= request.getMethod() %></span></h4>
  
         <h4>HTTP Request Headers Received</h4>
         
