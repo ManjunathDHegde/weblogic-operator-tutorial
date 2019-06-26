@@ -40,7 +40,6 @@
             Time = new Date();
             Dtime = Time.toString();
             %>
-        
         <h2> This is a Sample Web Application - Snoop Servlet  </h2>
         <hr>
         
