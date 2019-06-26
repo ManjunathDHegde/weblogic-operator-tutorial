@@ -48,6 +48,23 @@
             <h4>Host Name & IP Address: <span><%=  hostName %></span></h4>
             <h4>JVM Name: <span><%=  serverName %></span></h4>
             <h4> Date & Time: <span> <%= Dtime %> </h4>
+        <h4>HTTP Request URL : <span><%= request.getRequestURL() %></span></h4>
+        <h4>Request Method: <span><%= request.getMethod() %></span></h4>
+        <h4>Request URI: <span><%= request.getRequestURI() %></span></h4>
+        <h4>Request Protocol: <span><%= request.getProtocol() %></span></h4>
+        <h4>Servlet Path: <span><%= request.getServletPath() %></span></h4>
+        <h4>Path Info: <span><%= request.getPathInfo() %></span></h4>
+        <h4>Path Translated: <span><%= request.getPathTranslated() %></span></h4>
+        <h4>Query String: <span><%= request.getQueryString() %></span></h4>
+        <h4>Content Length: <span><%= request.getContentLength() %></span></h4>
+        <h4>Content Type: <span><%= request.getContentType() %></span></h4>
+        <h4>Server Name: <span><%= request.getServerName() %></span></h4>
+        <h4>Server Port: <span><%= request.getServerPort() %></span></h4>
+        <h4>Remote User: <span><%= request.getRemoteUser() %></span></h4>
+        <h4>Remote Address: <span><%= request.getRemoteAddr() %></span></h4>
+        <h4>Remote Host: <span><%= request.getRemoteHost() %></span></h4>
+        <h4>Authorization Scheme: <span><%= request.getAuthType() %></span></h4>
+                
         </div>
         
         <h4>HTTP Request URL : <span><%= request.getRequestURL() %></span></h4>
