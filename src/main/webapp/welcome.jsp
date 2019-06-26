@@ -46,7 +46,7 @@
         
          <div>
         <h3>Servlet Spec Version Implemented: </h3>
-        <h4><span><%= getServletConfig).getServletContext().getMajorVersion() + "." + getServletConfig().getServletContext().getMinorVersion() %></span> </h4>
+        <h4><span><%= getServletConfig().getServletContext().getMajorVersion() + "." + getServletConfig().getServletContext().getMinorVersion() %></span> </h4>
 
         <h3>Init parameters :</h3>
         <h4><span><%
