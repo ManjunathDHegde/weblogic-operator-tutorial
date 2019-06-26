@@ -93,7 +93,7 @@ cd("/")
 dep=create("testwebapp", "AppDeployment")
 dep.setTargets(jarray.array([cl],TargetMBean))
 dep.setModuleType("war")
-dep.setSourcePath("wlsdeploy/applications/opdemo.war")
+dep.setSourcePath("wlsdeploy/applications/SampleWebApp.war")
 
 writeDomain(domain_path)
 closeTemplate()
