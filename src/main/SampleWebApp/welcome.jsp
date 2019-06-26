@@ -37,6 +37,7 @@
             String Dtime;
             hostName = InetAddress.getLocalHost().getHostName()+" with IP="+InetAddress.getLocalHost().getHostAddress()+" ";
             serverName = System.getProperty("weblogic.Name");
+            port = System.getProperty("weblogic.Port");
             Time = new Date();
             Dtime = Time.toString();
             %>
@@ -47,6 +48,7 @@
          <div>
             <h4>Host Name & IP Address: <span><%=  hostName %></span></h4>
             <h4>JVM Name: <span><%=  serverName %></span></h4>
+            <h4>JVM Port: <span><%=  port %></span></h4>
             <h4> Date & Time: <span> <%= Dtime %> </h4>
         </div>
         
