@@ -15,7 +15,7 @@ RUN mkdir -p $DOMAIN_HOME && \
 
 COPY scripts/* ${DOMAIN_HOME}/docker-build-tmp/
 
-COPY target/SampleWebApp.war $DOMAIN_HOME/wlsdeploy/applications/
+COPY target/opdemo.war $DOMAIN_HOME/wlsdeploy/applications/
 
 RUN wlst.sh -skipWLSModuleScanning -loadProperties ${DOMAIN_HOME}/docker-build-tmp/datasource.properties \
       ${DOMAIN_HOME}/docker-build-tmp/model.py
