@@ -45,6 +45,17 @@
         <hr>
         
          <div>
+<h3>Servlet Spec Version Implemented: </h3>
+<h4><%= getServletConfig).getServletContext().getMajorVersion() + "." + getServletConfig().getServletContext().getMinorVersion() %> </h4>
+
+<h3>Init parameters :</h3>
+<h4><%
+Enumeration e = getServletConfig().getInitParameterNames();
+while (e.hasMoreElements()) {
+  String name = (String)e.nextElement();
+  out.println(name + ": " + getServletConfig().getInitParameter(name));
+}
+%>  </h4>           
             <h4>Host Name & IP Address: <span><%=  hostName %></span></h4>
             <h4>JVM Name: <span><%=  serverName %></span></h4>
             <h4> Date & Time: <span> <%= Dtime %> </h4>
